@@ -34,7 +34,7 @@
 			{
 				$("#counter").bind('input propertychange', function()
 				{
-					var count = $(this).val().length;
+					var count = numberWithCommas($(this).val().length);
 					$("#count").val(count ? count : "");
 				});
 			});
